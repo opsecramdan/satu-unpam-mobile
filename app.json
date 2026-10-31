@@ -1,24 +1,40 @@
 {
   "expo": {
-    "name": "satu-unpam-mobile",
+    "name": "SATU UNPAM",
     "slug": "satu-unpam-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1a237e"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "id.ac.unpam.satu.mobile"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+        "monochromeImage": "./assets/android-icon-monochrome.png",
+        "backgroundColor": "#1a237e"
+      },
+      "package": "id.ac.unpam.satu.mobile"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-splash-screen"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "349936d2-61c2-4062-a2b2-6318f7980eb1"
+      }
+    },
+    "owner": "opsecramdan"
   }
 }
