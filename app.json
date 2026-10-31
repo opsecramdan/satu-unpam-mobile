@@ -3,6 +3,9 @@
     "name": "SATU UNPAM",
     "slug": "satu-unpam-mobile",
     "version": "1.0.0",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
@@ -27,8 +30,12 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "updates": {
+      "url": "https://u.expo.dev/349936d2-61c2-4062-a2b2-6318f7980eb1"
+    },
     "plugins": [
-      "expo-splash-screen"
+      "expo-splash-screen",
+      "expo-updates"
     ],
     "extra": {
       "eas": {
