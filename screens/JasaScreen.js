@@ -16,7 +16,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useTheme } from '../config/ThemeContext';
 
 const { width } = Dimensions.get('window');
-const WA_NUMBER = '6281234567890'; // Ganti nomor asli nanti
+const WA_NUMBER = '6281245505784'; // Ganti nomor asli nanti
 
 const SERVICES_LIST = [
   {
