@@ -242,6 +242,8 @@ export default function HomeScreen({ navigation }) {
 
   const openService = (key) => {
     if (key === 'presensi') { navigation.navigate('Presensi'); return; }
+    if (key === 'myunpam') { navigation.navigate('MyUnpam'); return; }
+    if (key === 'mentari') { navigation.navigate('Mentari'); return; }
     const service = SERVICES[key];
     navigation.navigate('Service', {
       serviceKey: key,

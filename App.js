@@ -11,6 +11,8 @@ import HomeScreen from './screens/HomeScreen';
 import ServiceScreen from './screens/ServiceScreen';
 import PresensiScreen from './screens/PresensiScreen';
 import JasaScreen from './screens/JasaScreen';
+import MyUnpamScreen from './screens/MyUnpamScreen';
+import MentariScreen from './screens/MentariScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -79,6 +81,22 @@ function AppInner() {
             headerTitleStyle: { fontWeight: 'bold', fontSize: 17 },
             headerBackTitle: 'Kembali',
             animation: 'slide_from_bottom',
+          }} />
+          <Stack.Screen name="MyUnpam" component={MyUnpamScreen} options={{
+            title: 'MyUNPAM',
+            headerStyle: { backgroundColor: isDark ? '#0a2647' : '#0d47a1' },
+            headerTintColor: '#fff',
+            headerTitleStyle: { fontWeight: 'bold', fontSize: 17 },
+            headerBackTitle: 'Kembali',
+            animation: 'slide_from_right',
+          }} />
+          <Stack.Screen name="Mentari" component={MentariScreen} options={{
+            title: 'Mentari E-Learning',
+            headerStyle: { backgroundColor: isDark ? '#1b3a1b' : '#1b5e20' },
+            headerTintColor: '#fff',
+            headerTitleStyle: { fontWeight: 'bold', fontSize: 17 },
+            headerBackTitle: 'Kembali',
+            animation: 'slide_from_right',
           }} />
           <Stack.Screen name="Service" component={ServiceScreen} options={({ route }) => {
             const service = SERVICES[route.params?.serviceKey] || {};
